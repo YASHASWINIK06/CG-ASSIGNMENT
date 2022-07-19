@@ -2219,7 +2219,7 @@ void mydisplay(void)
     glColor3f(1, 0, 0);
 
     glRasterPos3f(-6, 9, 0);
-    char m1[] = "BANGALORE INSTITUTE OF TECHNOLOGY";
+    char m1[] = "BMS INSTITUTE OF TECHNOLOGY AND MANAGEMENT";
     for (int i = 0;i < strlen(m1);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m1[i]);
 
@@ -2244,54 +2244,65 @@ void mydisplay(void)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m5[i]);
 
     glRasterPos3f(-10, -1, 0);
-    char m6[] = "RAKSHITHA S";
+    char m6[] = "YASHASWINI K";
     for (int i = 0;i < strlen(m6);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m6[i]);
 
     glRasterPos3f(10, -1, 0);
-    char m7[] = "1BI18CS120";
+    char m7[] = "1BY19CS185";
     for (int i = 0;i < strlen(m7);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m7[i]);
 
     glRasterPos3f(-10, -2, 0);
-    char m8[] = "PRERANA R";
+    char m8[] = "MUKUND YADAV R N";
     for (int i = 0;i < strlen(m8);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m8[i]);
 
     glRasterPos3f(10, -2, 0);
-    char m9[] = "1BI18CS115";
+    char m9[] = "1BY19CS086";
     for (int i = 0;i < strlen(m9);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m9[i]);
 
-    glRasterPos3f(-4, -4, 0);
-    char m10[] = "UNDER THE GUIDENCE OF";
+     glRasterPos3f(-10, -3, 0);
+    char m10[] = "VEER J SHAH";
     for (int i = 0;i < strlen(m10);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m10[i]);
 
-    glRasterPos3f(-10, -5, 0);
-    char m11[] = "Prof.Mamatha V";
+        glRasterPos3f(10, -3, 0);
+    char m11[] = "1BY19CS179";
     for (int i = 0;i < strlen(m11);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m11[i]);
 
-    glRasterPos3f(-10, -6, 0);
-    char m12[] = "Asst Professor";
+
+    glRasterPos3f(-2, -5, 0);
+    char m12[] = "UNDER THE GUIDENCE OF";
     for (int i = 0;i < strlen(m12);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m12[i]);
 
-    glRasterPos3f(10, -5, 0);
-    char m13[] = "Prof.N.Thanuja";
+    glRasterPos3f(-10, -6, 0);
+    char m13[] = "Mr.Muneshwara M S";
     for (int i = 0;i < strlen(m13);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m13[i]);
 
-    glRasterPos3f(10, -6, 0);
+    glRasterPos3f(-10, -7, 0);
     char m14[] = "Asst Professor";
     for (int i = 0;i < strlen(m14);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m14[i]);
 
-    glRasterPos3f(-5, -8, 0);
-    char m15[] = "Press S to Start";
+    glRasterPos3f(10, -6, 0);
+    char m15[] = "Prof.Shruthi J";
     for (int i = 0;i < strlen(m15);i++)
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m15[i]);
+
+    glRasterPos3f(10, -7, 0);
+    char m16[] = "Asst Professor";
+    for (int i = 0;i < strlen(m16);i++)
+        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m16[i]);
+
+    glRasterPos3f(-1, -8, 0);
+    char m17[] = "Press S to Start";
+    for (int i = 0;i < strlen(m17);i++)
+        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, m17[i]);
 
     glutSwapBuffers();
 
@@ -2559,7 +2570,7 @@ void myTimer(int val)
 }
 
 
-void main(int argc, char* argv)
+int main(int argc, char* argv)
 {
     glutInit(&argc, &argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
@@ -2571,7 +2582,7 @@ void main(int argc, char* argv)
     glutDisplayFunc(mydisplay);
     glutKeyboardFunc(keys);
     glutSpecialFunc(spe_key);
-    glutTimerFunc(5000, myTimer, 0);
+    glutTimerFunc(7000, myTimer, 0);
     glutKeyboardFunc(normal_key);
     //glEnable(GL_DEPTH_TEST);
     glutMainLoop();
